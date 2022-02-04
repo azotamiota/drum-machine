@@ -7,33 +7,33 @@ const DrumMachine = () => {
         <div id="drumbox" className="container">
           <div className="key-container">
             <div className="key">
-              <div className="btn bg-primary">Key</div>
+              <div className="btn">Key</div>
             </div>
             <div className="key">
-              <div className="btn bg-primary">Key</div>
+              <div className="btn">Key</div>
             </div>
             <div className="key">
-              <div className="btn bg-primary">Key</div>
-            </div>
-
-            <div className="key">
-              <div className="btn bg-primary">Key</div>
-            </div>
-            <div className="key">
-              <div className="btn bg-primary">Key</div>
-            </div>
-            <div className="key">
-              <div className="btn bg-primary">Key</div>
+              <div className="btn">Key</div>
             </div>
 
             <div className="key">
-              <div className="btn bg-primary">Key</div>
+              <div className="btn">Key</div>
             </div>
             <div className="key">
-              <div className="btn bg-primary">Key</div>
+              <div className="btn">Key</div>
             </div>
             <div className="key">
-              <div className="btn bg-primary">Key</div>
+              <div className="btn">Key</div>
+            </div>
+
+            <div className="key">
+              <div className="btn">Key</div>
+            </div>
+            <div className="key">
+              <div className="btn">Key</div>
+            </div>
+            <div className="key">
+              <div className="btn">Key</div>
             </div>
           </div>
         </div>
