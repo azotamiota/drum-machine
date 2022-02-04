@@ -4,25 +4,39 @@ const DrumMachine = () => {
         <section id="header" className="text-center p-3">
           <h1>Drum machine</h1>
         </section>
-        <div id="drumbox" className="container p-3 ms-auto me-auto">
-          <div className="row gy-1">
-            <div className="col-4 key"><button className="w-100">Key</button></div>
-            <div className="col-4 key"><button className="w-100">Key</button></div>
-            <div className="col-4 key"><button className="w-100">Key</button></div>
+        <div id="drumbox" className="container">
+          <div className="key-container">
+            <div className="key">
+              <div className="btn bg-primary" >Key</div>
+            </div>
+            <div className="key">
+              <div className="btn bg-primary">Key</div>
+            </div>
+            <div className="key">
+              <div className="btn bg-primary">Key</div>
+            </div>
 
+            <div className="key">
+              <div className="btn bg-primary">Key</div>
+            </div>
+            <div className="key">
+              <div className="btn bg-primary">Key</div>
+            </div>
+            <div className="key">
+              <div className="btn bg-primary">Key</div>
+            </div>
 
-            <div className="col-4 key"><button className="w-100">Key</button></div>
-            <div className="col-4 key"><button className="w-100">Key</button></div>
-            <div className="col-4 key"><button className="w-100">Key</button></div>
-
-     
-
-            <div className="col-4 key"><button className="w-100">Key</button></div>
-            <div className="col-4 key"><button className="w-100">Key</button></div>
-            <div className="col-4 key"><button className="w-100">Key</button></div>
+            <div className="key">
+              <div className="btn bg-primary">Key</div>
+            </div>
+            <div className="key">
+              <div className="btn bg-primary">Key</div>
+            </div>
+            <div className="key">
+              <div className="btn bg-primary">Key</div>
             </div>
           </div>
-        
+        </div>
       </>
     ); 
 }

@@ -17,12 +17,31 @@ code {
   height: auto;
 
 }
-.row {
+.key-container {
   border: 1px solid;
-  /* width: 200px;
-  height: 200px; */
+  display: inline-grid;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 3px;
 
 }
+
 .key {
   border: 1px solid;
+
+  display: grid;
+  grid-template-columns: 100%;
+  /* grid-template-rows: auto; */
+  
+}
+.container {
+  padding: 20px;
+}
+.btn {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
