@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+#drumbox {
+  border: 1px solid black;
+  width: 70vw;
+  height: auto;
+
+}
+.row {
+  border: 1px solid;
+  /* width: 200px;
+  height: 200px; */
+
+}
+.key {
+  border: 1px solid;
+}
