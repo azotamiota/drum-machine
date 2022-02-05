@@ -68,7 +68,19 @@ code {
     margin: 20px auto auto auto;
     padding: 1rem;
 }
+footer {
+  font-family: monospace;
+  margin-top: 15px;
+  text-align: center;
 
+}
+a {
+  color: purple;
+}
+
+a:visited {
+  text-decoration: none;
+}
 @media only screen and (min-width: 768px) {
 
 .key-container {

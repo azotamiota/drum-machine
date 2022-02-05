@@ -216,6 +216,7 @@ document.addEventListener("keydown", function (event) {
           </div>
           <div id="display">Sound name</div>
         </div>
+        <footer id='copyright'>created by <a href='https://azotamiota.github.io'>azotamiota</a></footer>
       </>
     ); 
 }
