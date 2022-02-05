@@ -26,7 +26,7 @@ code {
 
 }
 
-.key {
+.drum-pad {
   border: 1px solid;
   
   display: grid;
@@ -37,8 +37,12 @@ code {
 }
 .container {
   padding: 20px;
+  border: 1px solid red;
 }
-.btn {
+#display {
+  border: 1px solid blue;
+}
+.drum-pad {
   background-color: lightblue;
   padding: 0;
   margin: 0;
@@ -50,7 +54,7 @@ code {
   box-shadow: 0px 5px 3px #999
 }
 
-.btn:active {
+.drum-pad:active {
   background-color: #3e8e41;
   box-shadow: 0px 3px 3px #666;
   transform: translate(3px, 3px);
