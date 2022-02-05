@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: grey;
 }
 
 code {
@@ -12,42 +13,30 @@ code {
     monospace;
 }
 
-
-#drumbox {
-  border: 1px solid black;
+.container {
+  background-color: lightsteelblue;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 425px;
+   border: 10px solid darkslategray;
   width: 70vw;
   height: auto;
-
 }
+
 .key-container {
-    border: 1px solid;
     display: inline-grid;
-    grid-template-rows: 90px 90px 90px;
-    grid-template-columns: 90px 90px 90px;
+    grid-template-rows: 60px 60px 60px;
+    grid-template-columns: 60px 60px 60px;
     grid-gap: 7px;
     justify-content: center;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  border: 1px solid red;
-  max-width: 425px;
-}
-#display {
-    border: 1px solid blue;
-    width: auto;
-    height: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px auto auto auto;
-    padding: 1rem;
-}
 .drum-pad {
-  border: 1px solid;
-  background-color: lightblue;
+  color: white;
+  font-size: 30px;
+  border-radius: 10px;
+  background-color: darkslategrey;
   padding: 0;
   margin: 0;
   width: 100%;
@@ -64,10 +53,25 @@ code {
   transform: translate(3px, 3px);
   
 }
+
+#display {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+    border-radius: 10px;
+    background-color: darkslateblue;
+    width: auto;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto auto auto;
+    padding: 1rem;
+}
+
 @media only screen and (min-width: 768px) {
 
 .key-container {
-    border: 1px solid;
     display: inline-grid;
     grid-template-rows: 120px 120px 120px;
     grid-template-columns: 120px 120px 120px;
@@ -79,12 +83,11 @@ code {
   
   flex-direction: row;
   padding: 40px;
-  border: 1px solid red;
   max-width: 700px;
 }
 #display {
     
-    margin: auto;
+    margin: auto auto auto 2vw;
    
 }
 }

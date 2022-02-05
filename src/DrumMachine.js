@@ -84,8 +84,13 @@ document.addEventListener("keydown", function (event) {
 
     return (
       <>
-        <section id="header" className="text-center p-3">
+        <section
+          id="header"
+          className="d-flex justify-content-between text-center p-3"
+        >
+          <div className="fas fa-drum fa-lg"></div>
           <h1>Drum machine</h1>
+          <div className="fas fa-drum fa-lg"></div>
         </section>
         <div id="drum-machine" className="container">
           <div className="key-container">
@@ -106,9 +111,7 @@ document.addEventListener("keydown", function (event) {
               className="drum-pad"
               id="keyW"
               name="Heater-2"
-              onClick={
-                () => soundW()
-              }
+              onClick={() => soundW()}
             >
               <audio
                 src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3"
@@ -121,9 +124,7 @@ document.addEventListener("keydown", function (event) {
               className="drum-pad"
               id="keyE"
               name="Heater-3"
-              onClick={
-                () => soundE()
-              }
+              onClick={() => soundE()}
             >
               <audio
                 src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3"
@@ -137,9 +138,7 @@ document.addEventListener("keydown", function (event) {
               className="drum-pad"
               id="keyA"
               name="Heater-4"
-              onClick={
-                () => soundA()
-              }
+              onClick={() => soundA()}
             >
               <audio
                 src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3"
@@ -152,9 +151,7 @@ document.addEventListener("keydown", function (event) {
               className="drum-pad"
               id="keyS"
               name="Clap"
-              onClick={
-                () => soundS()
-              }
+              onClick={() => soundS()}
             >
               <audio
                 src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3"
@@ -167,9 +164,7 @@ document.addEventListener("keydown", function (event) {
               className="drum-pad"
               id="keyD"
               name="Open-HH"
-              onClick={
-                () => soundD()
-              }
+              onClick={() => soundD()}
             >
               <audio
                 src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3"
@@ -183,9 +178,7 @@ document.addEventListener("keydown", function (event) {
               className="drum-pad"
               id="keyZ"
               name="Kick'n Hat"
-              onClick={
-                () => soundZ()
-              }
+              onClick={() => soundZ()}
             >
               <audio
                 src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3"
@@ -198,9 +191,7 @@ document.addEventListener("keydown", function (event) {
               className="drum-pad"
               id="keyX"
               name="Kick"
-              onClick={
-                () => soundX()
-              }
+              onClick={() => soundX()}
             >
               <audio
                 src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3"
@@ -213,9 +204,7 @@ document.addEventListener("keydown", function (event) {
               className="drum-pad"
               id="keyC"
               name="Closed-HH"
-              onClick={
-                () => soundC()
-              }
+              onClick={() => soundC()}
             >
               <audio
                 src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"
@@ -225,7 +214,7 @@ document.addEventListener("keydown", function (event) {
               C
             </div>
           </div>
-          <span id="display">Sound name</span>
+          <div id="display">Sound name</div>
         </div>
       </>
     ); 
