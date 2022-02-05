@@ -1,10 +1,11 @@
+
+
 const DrumMachine = () => {
 
 const soundQ = () => {
 document.getElementById("Q").play();
     document.getElementById('display').innerText = document.getElementById("keyQ").getAttribute('name');
 }
-
 const soundW = () => {
   document.getElementById("W").play();
   document.getElementById("display").innerText = document
@@ -47,8 +48,7 @@ const soundW = () => {
     .getAttribute("name");
 };
 document.addEventListener("keydown", function (event) {
-  //console.log(`The ${event.key} has been pressed, keycode: ${event.keyCode}`);
-  console.log('child element for keyQ: ',document.getElementById('keyQ').children[0])
+  
   if (event.keyCode === 81) {
     soundQ()
     
@@ -80,11 +80,6 @@ document.addEventListener("keydown", function (event) {
     console.log("No sound for this key");
   }
 });
-
-// const handleClick = (key) => {
-// console.log('button has been pressed')
-// document.getElementById(key).play()
-// }
 
 
     return (
@@ -230,7 +225,7 @@ document.addEventListener("keydown", function (event) {
               C
             </div>
           </div>
-          <section id="display">Sound name</section>
+          <span id="display">Sound name</span>
         </div>
       </>
     ); 
