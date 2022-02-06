@@ -3,33 +3,22 @@
 const DrumMachine = () => {
 
 const soundAndPressAnimation = (key) => {
-  console.log('event is: ', key)
-  
 document.getElementById(`key${key}`).setAttribute('class', 'drum-pad-active');
-
 document.getElementById(key).currentTime = 0;
 document.getElementById(key).play();
-    document.getElementById('display').innerText = document.getElementById(`key${key}`).getAttribute('name');
+document.getElementById('display').innerText = document.getElementById(`key${key}`).getAttribute('name');
 setTimeout(() => {document.getElementById(`key${key}`).setAttribute("class", "drum-pad");}, 100);
 
 }
 
-  
   const handleKeyPress = (event) => {
 
     const keyPressed = event.key.toUpperCase();
-      const elementPressed = document.getElementById(keyPressed).parentElement
-      elementPressed.click()
+    const elementPressed = document.getElementById(keyPressed).parentElement
+    elementPressed.click()
   };
 
 document.addEventListener("keydown", handleKeyPress);
-
-    
-  
-    //document.removeEventListener("keydown", handleKeyPress)
-  
-
-//document.addEventListener("keydown", handleKeyPress);
 
     return (
       <>
@@ -163,7 +152,11 @@ document.addEventListener("keydown", handleKeyPress);
               C
             </div>
           </div>
+        <div id='display-container' className="p-2 d-flex justify-content-center align-items-center">
+
           <div id="display">Sound name</div>
+        </div>
+        
         </div>
         <footer id="copyright">
           created by <a href="https://azotamiota.github.io">azotamiota</a>
