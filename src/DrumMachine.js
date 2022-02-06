@@ -22,7 +22,7 @@ document.addEventListener("keydown", handleKeyPress);
       <>
         <section
           id="header"
-          className="d-flex justify-content-between text-center p-3"
+          className="d-flex justify-content-evenly align-items-center p-3"
         >
           <div className="fas fa-drum fa-lg"></div>
           <h1>Drum machine</h1>
@@ -160,8 +160,7 @@ document.addEventListener("keydown", handleKeyPress);
         <footer id="copyright">
           Designed and Coded By
           <br />
-            <a href="https://azotamiota.github.io">azotamiota</a>
-         
+          <a href="https://azotamiota.github.io">azotamiota</a>
         </footer>
       </>
     ); 
