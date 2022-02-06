@@ -2,85 +2,34 @@
 
 const DrumMachine = () => {
 
-const soundQ = () => {
-document.getElementById("Q").play();
-    document.getElementById('display').innerText = document.getElementById("keyQ").getAttribute('name');
+const soundAndPressAnimation = (key) => {
+  console.log('event is: ', key)
+  
+document.getElementById(`key${key}`).setAttribute('class', 'drum-pad-active');
+
+document.getElementById(key).currentTime = 0;
+document.getElementById(key).play();
+    document.getElementById('display').innerText = document.getElementById(`key${key}`).getAttribute('name');
+setTimeout(() => {document.getElementById(`key${key}`).setAttribute("class", "drum-pad");}, 100);
+
 }
-const soundW = () => {
-  document.getElementById("W").play();
-  document.getElementById("display").innerText = document
-    .getElementById("keyW")
-    .getAttribute("name");
-};const soundE = () => {
-  document.getElementById("E").play();
-  document.getElementById("display").innerText = document
-    .getElementById("keyE")
-    .getAttribute("name");
-};const soundA = () => {
-  document.getElementById("A").play();
-  document.getElementById("display").innerText = document
-    .getElementById("keyA")
-    .getAttribute("name");
-};const soundS = () => {
-  document.getElementById("S").play();
-  document.getElementById("display").innerText = document
-    .getElementById("keyS")
-    .getAttribute("name");
-};const soundD = () => {
-  document.getElementById("D").play();
-  document.getElementById("display").innerText = document
-    .getElementById("keyD")
-    .getAttribute("name");
-};const soundZ = () => {
-  document.getElementById("Z").play();
-  document.getElementById("display").innerText = document
-    .getElementById("keyZ")
-    .getAttribute("name");
-};const soundX = () => {
-  document.getElementById("X").play();
-  document.getElementById("display").innerText = document
-    .getElementById("keyX")
-    .getAttribute("name");
-};const soundC = () => {
-  document.getElementById("C").play();
-  document.getElementById("display").innerText = document
-    .getElementById("keyC")
-    .getAttribute("name");
-};
-document.addEventListener("keydown", function (event) {
+
   
-  if (event.keyCode === 81) {
-    soundQ()
+  const handleKeyPress = (event) => {
+
+    const keyPressed = event.key.toUpperCase();
+      const elementPressed = document.getElementById(keyPressed).parentElement
+      elementPressed.click()
+  };
+
+document.addEventListener("keydown", handleKeyPress);
+
     
-  } else if (event.keyCode === 87) {
-    soundW()
-
-  } else if (event.keyCode === 69) {
-    soundE()
-
-  } else if (event.keyCode === 65) {
-    soundA()
-
-  } else if (event.keyCode === 83) {
-    soundS() 
-
-  } else if (event.keyCode === 68) {
-    soundD()
-
-  } else if (event.keyCode === 90) {
-    soundZ()
-
-  } else if (event.keyCode === 88) {
-    soundX()
   
-  } else if (event.keyCode === 67) {
-    soundC()
+    //document.removeEventListener("keydown", handleKeyPress)
+  
 
-  } else {
-    console.log("No sound for this key");
-  }
-});
-
+//document.addEventListener("keydown", handleKeyPress);
 
     return (
       <>
@@ -98,7 +47,7 @@ document.addEventListener("keydown", function (event) {
               className="drum-pad"
               id="keyQ"
               name="Heater-1"
-              onClick={soundQ}
+              onClick={() => soundAndPressAnimation('Q')}
             >
               <audio
                 src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"
@@ -111,7 +60,7 @@ document.addEventListener("keydown", function (event) {
               className="drum-pad"
               id="keyW"
               name="Heater-2"
-              onClick={() => soundW()}
+              onClick={() => soundAndPressAnimation('W')}
             >
               <audio
                 src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3"
@@ -124,7 +73,7 @@ document.addEventListener("keydown", function (event) {
               className="drum-pad"
               id="keyE"
               name="Heater-3"
-              onClick={() => soundE()}
+              onClick={() => soundAndPressAnimation('E')}
             >
               <audio
                 src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3"
@@ -138,7 +87,7 @@ document.addEventListener("keydown", function (event) {
               className="drum-pad"
               id="keyA"
               name="Heater-4"
-              onClick={() => soundA()}
+              onClick={() => soundAndPressAnimation('A')}
             >
               <audio
                 src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3"
@@ -151,7 +100,7 @@ document.addEventListener("keydown", function (event) {
               className="drum-pad"
               id="keyS"
               name="Clap"
-              onClick={() => soundS()}
+              onClick={() => soundAndPressAnimation('S')}
             >
               <audio
                 src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3"
@@ -164,7 +113,7 @@ document.addEventListener("keydown", function (event) {
               className="drum-pad"
               id="keyD"
               name="Open-HH"
-              onClick={() => soundD()}
+              onClick={() => soundAndPressAnimation('D')}
             >
               <audio
                 src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3"
@@ -178,7 +127,7 @@ document.addEventListener("keydown", function (event) {
               className="drum-pad"
               id="keyZ"
               name="Kick'n Hat"
-              onClick={() => soundZ()}
+              onClick={() => soundAndPressAnimation('Z')}
             >
               <audio
                 src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3"
@@ -191,7 +140,7 @@ document.addEventListener("keydown", function (event) {
               className="drum-pad"
               id="keyX"
               name="Kick"
-              onClick={() => soundX()}
+              onClick={() => soundAndPressAnimation('X')}
             >
               <audio
                 src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3"
@@ -204,7 +153,7 @@ document.addEventListener("keydown", function (event) {
               className="drum-pad"
               id="keyC"
               name="Closed-HH"
-              onClick={() => soundC()}
+              onClick={() => soundAndPressAnimation('C')}
             >
               <audio
                 src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"
@@ -216,7 +165,9 @@ document.addEventListener("keydown", function (event) {
           </div>
           <div id="display">Sound name</div>
         </div>
-        <footer id='copyright'>created by <a href='https://azotamiota.github.io'>azotamiota</a></footer>
+        <footer id="copyright">
+          created by <a href="https://azotamiota.github.io">azotamiota</a>
+        </footer>
       </>
     ); 
 }
