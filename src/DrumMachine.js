@@ -1,5 +1,3 @@
-
-
 const DrumMachine = () => {
 
 const soundAndPressAnimation = (key) => {
@@ -36,7 +34,7 @@ document.addEventListener("keydown", handleKeyPress);
               className="drum-pad"
               id="keyQ"
               name="Heater-1"
-              onClick={() => soundAndPressAnimation('Q')}
+              onClick={() => soundAndPressAnimation("Q")}
             >
               <audio
                 src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"
@@ -49,7 +47,7 @@ document.addEventListener("keydown", handleKeyPress);
               className="drum-pad"
               id="keyW"
               name="Heater-2"
-              onClick={() => soundAndPressAnimation('W')}
+              onClick={() => soundAndPressAnimation("W")}
             >
               <audio
                 src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3"
@@ -62,7 +60,7 @@ document.addEventListener("keydown", handleKeyPress);
               className="drum-pad"
               id="keyE"
               name="Heater-3"
-              onClick={() => soundAndPressAnimation('E')}
+              onClick={() => soundAndPressAnimation("E")}
             >
               <audio
                 src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3"
@@ -76,7 +74,7 @@ document.addEventListener("keydown", handleKeyPress);
               className="drum-pad"
               id="keyA"
               name="Heater-4"
-              onClick={() => soundAndPressAnimation('A')}
+              onClick={() => soundAndPressAnimation("A")}
             >
               <audio
                 src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3"
@@ -89,7 +87,7 @@ document.addEventListener("keydown", handleKeyPress);
               className="drum-pad"
               id="keyS"
               name="Clap"
-              onClick={() => soundAndPressAnimation('S')}
+              onClick={() => soundAndPressAnimation("S")}
             >
               <audio
                 src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3"
@@ -102,7 +100,7 @@ document.addEventListener("keydown", handleKeyPress);
               className="drum-pad"
               id="keyD"
               name="Open-HH"
-              onClick={() => soundAndPressAnimation('D')}
+              onClick={() => soundAndPressAnimation("D")}
             >
               <audio
                 src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3"
@@ -116,7 +114,7 @@ document.addEventListener("keydown", handleKeyPress);
               className="drum-pad"
               id="keyZ"
               name="Kick'n Hat"
-              onClick={() => soundAndPressAnimation('Z')}
+              onClick={() => soundAndPressAnimation("Z")}
             >
               <audio
                 src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3"
@@ -129,7 +127,7 @@ document.addEventListener("keydown", handleKeyPress);
               className="drum-pad"
               id="keyX"
               name="Kick"
-              onClick={() => soundAndPressAnimation('X')}
+              onClick={() => soundAndPressAnimation("X")}
             >
               <audio
                 src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3"
@@ -142,7 +140,7 @@ document.addEventListener("keydown", handleKeyPress);
               className="drum-pad"
               id="keyC"
               name="Closed-HH"
-              onClick={() => soundAndPressAnimation('C')}
+              onClick={() => soundAndPressAnimation("C")}
             >
               <audio
                 src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"
@@ -152,14 +150,18 @@ document.addEventListener("keydown", handleKeyPress);
               C
             </div>
           </div>
-        <div id='display-container' className="p-2 d-flex justify-content-center align-items-center">
-
-          <div id="display">Sound name</div>
-        </div>
-        
+          <div
+            id="display-container"
+            className="p-2 d-flex justify-content-center align-items-center"
+          >
+            <div id="display">Sound name</div>
+          </div>
         </div>
         <footer id="copyright">
-          created by <a href="https://azotamiota.github.io">azotamiota</a>
+          Designed and Coded By
+          <br />
+            <a href="https://azotamiota.github.io">azotamiota</a>
+         
         </footer>
       </>
     ); 
