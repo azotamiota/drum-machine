@@ -24,7 +24,9 @@ code {
   width: 70vw;
   height: auto;
 }
-
+h1 {
+  text-align: center;
+}
 .key-container {
     display: inline-grid;
     grid-template-rows: 60px 60px 60px;
@@ -45,7 +47,8 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 5px 3px #999
+  box-shadow: 0px 5px 3px #999;
+  cursor: pointer;
 }
 
 .drum-pad-active {
@@ -63,6 +66,7 @@ color: white;
   background-color: #3e8e41;
   box-shadow: 0px 3px 3px #666;
   transform: translate(3px, 3px);
+  cursor: default
 }
 
 #display {

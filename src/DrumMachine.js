@@ -22,11 +22,11 @@ document.addEventListener("keydown", handleKeyPress);
       <>
         <section
           id="header"
-          className="d-flex justify-content-evenly align-items-center p-3"
+          className="d-flex justify-content-center p-3 align-items-center"
         >
-          <div className="fas fa-drum fa-lg"></div>
+          <i className="fa-solid fa-drum fa-2xl me-5"></i>
           <h1>Drum machine</h1>
-          <div className="fas fa-drum fa-lg"></div>
+          <i className="fa-solid fa-drum fa-2xl ms-5"></i>
         </section>
         <div id="drum-machine" className="container">
           <div className="key-container">
