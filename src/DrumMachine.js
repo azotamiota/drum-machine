@@ -24,9 +24,9 @@ document.addEventListener("keydown", handleKeyPress);
           id="header"
           className="d-flex justify-content-center p-3 align-items-center"
         >
-          <i className="fa-solid fa-drum fa-2xl me-5"></i>
+          {/* <i className="fa-solid fa-drum fa-2xl me-5"></i> */}
           <h1>Drum machine</h1>
-          <i className="fa-solid fa-drum fa-2xl ms-5"></i>
+          {/* <i className="fa-solid fa-drum fa-2xl ms-5"></i> */}
         </section>
         <div id="drum-machine" className="container">
           <div className="key-container">
@@ -158,9 +158,9 @@ document.addEventListener("keydown", handleKeyPress);
           </div>
         </div>
         <footer id="copyright">
-          Designed and Coded By
+          <span>Designed and Coded By</span>
           <br />
-          <a href="https://azotamiota.github.io">azotamiota</a>
+          <span><a href="https://azotamiota.github.io">azotamiota</a></span>
         </footer>
       </>
     ); 
